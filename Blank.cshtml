@@ -1,0 +1,41 @@
+﻿@{
+    ViewBag.Title = "Blank";
+}
+<br />
+@using (Html.BeginForm("Access", "Home", FormMethod.Post))
+{
+    <h5>Choose your sex: </h5>
+    @Html.RadioButton("sex", "Man");
+    <span>Man</span>
+    @Html.RadioButton("sex", "Woman");
+    <span>Woman</span>
+    @Html.RadioButton("sex", "Else");
+    <span>Else</span>
+    <br>
+    <span>Favourite music genre(s):</span>
+    <br />
+    @Html.CheckBox("Something", false, new { id = "SomethingFirst", value = "Rock" });
+    <span>Rock</span>
+    <br />
+    @Html.CheckBox("Something", false, new { id = "SomethingSecond", value = "Folk" });
+    <span>Folk</span>
+    <br />
+    @Html.CheckBox("Something", false, new { id = "SomethingThird", value = "Pop" });
+    <span>Pop</span>
+    <br />
+    @Html.CheckBox("Something", false, new { id = "SomethingThird", value = "Electronic music" });
+    <span>Electronic music</span>
+    <br />
+    @Html.CheckBox("Something", false, new { id = "SomethingThird", value = "Soul" });
+    <span>Soul</span>
+    <br>
+    <h5>Tell us something about yourself: </h5>
+    @Html.TextArea("Text", (string)ViewData["Text"]);
+    <br />
+    <input type="submit" name="Button" value="Send">
+}
+<footer class="customFooterBlank">
+    <div class="divFooter">
+        <h6 class="copyrights" id="footerText">All copyrights to NOONE. <a href="#"> Back to top </a></h6>
+    </div>
+</footer>

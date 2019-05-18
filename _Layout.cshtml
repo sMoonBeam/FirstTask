@@ -1,0 +1,26 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="~/Content/bootstrap.css">
+    <link rel="stylesheet" href="~/Content/StyleSheet1.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css" integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay" crossorigin="anonymous">
+    <title>Music</title>
+</head>
+<body class="mainBody">
+    <div class="head backgroundImg">
+        <h1 class="centeredTop headText">Music Blog</h1>
+    </div>
+    <div class="main">
+        @RenderBody()
+        <div class="menu">
+            <h4 class="menuItem menuHeader">Menu</h4>
+            <a class="menuItem fromTop" href="/home/main"><i class="fas fa-home"></i> Main</a>
+            <a class="menuItem fromTop" href="/home/guest"><i class="far fa-question-circle"></i> Guest</a>
+            <a class="menuItem fromTop" href="/home/blank"><i class="far fa-address-card"></i> Article</a>
+        </div>
+    </div>
+    
+</body>
+
+</html>

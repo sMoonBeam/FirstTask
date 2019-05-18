@@ -1,0 +1,22 @@
+﻿@{
+    ViewBag.Title = "Guest";
+}
+
+@using lecture1.Helpers
+@Html.dislpayComments()
+<br>
+@using (Html.BeginForm("Comment", "Home"))
+{
+    <input type="text" name="Login" placeholder="Login">
+    <br><br>
+    <input type="date" name="Date">
+    <br><br>
+    <textarea name="Comment" placeholder="Enter your comment here"> </textarea>
+    <br><br>
+    <input type="submit" value="Send">
+}
+<footer class="customFooter">
+    <div class="divFooter">
+        <h6 class="copyrights" id="footerText">All copyrights to NOONE. <a href="#"> Back to top </a></h6>
+    </div>
+</footer>
